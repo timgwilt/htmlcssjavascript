@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>High Caliber Martial Arts</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link href="/assets/styles/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler01"
+        aria-controls="navbarToggler01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarToggler01">
+        <a class="navbar-brand" href="#"><img src="/assets/images/header.jpg" alt="High Caliber Martial Arts" /></a>
+        <div class="navbar-nav me-auto mb-2 mb-lg-0"></div>
+        <form class="d-flex">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/programs.html">Programs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contactus.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-toggle="modal" data-target="#myModal">Login</a>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div id="carousel" class="carousel slide center" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/assets/images/animatedbo.jpg" class="d-block w-100" height="500px" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/assets/images/boclass.jpg" class="d-block w-100" height="500px" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/assets/images/girlkick.jpg" class="d-block w-100" height="500px" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/assets/images/swords.jpg" class="d-block w-100" height="500px" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/assets/images/womanbo.jpg" class="d-block w-100" height="500px" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev w-50" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next w-50" type="button" data-bs-target="#carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="false"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <table class="tblcards" style="margin-left: auto; margin-right: auto;">
+    <tr>
+      <td>
+        <div class="card text-white bg-dark " style="max-width: 18rem;">
+          <div class="card-header">Zombie Update</div>
+          <div class="card-body">
+            <h5 class="card-title">Pittsburgh</h5>
+            <p class="card-text">No new groups of zombies have been sighted.</p>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
+          <div class="card-header">Events</div>
+          <div class="card-body">
+            <h5 class="card-title">Zombie Tracking</h5>
+            <p class="card-text">Meet here at the building just before sundown. Don't be late because we will not wait.
+              If you are late you are own your own unless we run into you during our session.</p>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+          <div class="card-header">News</div>
+          <div class="card-body">
+            <h5 class="card-title">Zombie Vaccine</h5>
+            <p class="card-text">Human trial are still ungoing as volunteers to test this is few if any. I mean get real
+              who would volunteer to get bit or scratched by a zombies and hope there is not any mutation.</p>
+          </div>
+        </div>
+      </td>
+    </tr>
+  </table>
+
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header bg-secondary mb-3">
+          <h4 class="modal-title ">Login</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <form id="loginForm">
+            <div class="form-group">
+              <label for="inputEmail">Email address</label>
+              <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp"
+                placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group" style="padding-bottom: 10px;">
+              <label for="inputPassword">Password</label>
+              <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+            </div>
+            <button type="submit" id="loginSubmit" name="loginSubmit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" lang="javascript">
+    function handleSubmit(event) {
+      const data = new FormData(event.target);
+      const value = Object.fromEntries(data.entries());
+      console.log(value);
+    }
+    const form = document.getElementById('loginForm');
+    form.addEventListener('submit', handleSubmit);
+  </script>
+</body>
+
+</html>

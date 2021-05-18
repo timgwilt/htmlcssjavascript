@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programs</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link href="/assets/styles/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler01"
+        aria-controls="navbarToggler01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarToggler01">
+        <a class="navbar-brand" href="#"><img src="/assets/images/header.jpg" alt="High Caliber Martial Arts" /></a>
+        <div class="navbar-nav me-auto mb-2 mb-lg-0"></div>
+        <form class="d-flex">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/programs.html">Programs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contactus.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-toggle="modal" data-target="#myModal">Login</a>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div style="margin-left: 50px;">
+    <h3>About High Caliber Martial Arts in Pittsburgh</h3>
+    <div style="width: 50%;display: flex;">
+      As High Caliber Martial Arts navigates the current situation; we want you to
+      spend your hard earned money here. This will allow us to continue to bring
+      these awesome classes to our community. We are always searching new avenues
+      and the ways to do things to allow current and future students to safely
+      train away from zombie interference. Wether classes are indoor or out we
+      continue to keep an eye on the app detailing locations of zombie groups.
+      Schedule your f ree consultation, yes it is free. I will not charge you to
+      talk with me. I would love to see you abilities put to the test hunting
+      zombies!
+    </div>
+  </div>
+  <table style="margin-left: 50px; width: 75%;height: 200px;margin-top: 25px;">
+    <tr>
+      <td style="width: 15%">
+        <input class="form-check-input" type="radio" name="Radios" id="kidRadio" value="option1" checked
+          onchange="javascipt:toggle();" />
+        <label class="form-check-label" for="kidRadio" style="padding-left: 5px;">Child Classes</label>
+      </td>
+      <td rowspan="2" style="width: 90%;">
+        <div id="childProgram" style="text-align: left; display: flex;">
+          The High Caliber Kids Program builds a strong foundation for reaching a nice old age and emotional support is
+          dealing with the trama of feeling the splash of guts and gore when slicing and hacking zombies.
+          You will see improvements in your child's mental ability in dealing with type of survial skill. Their ability
+          to engage or disengage shows mental accumine in determining responsibel actions to survie in today's world.
+          There is a built-in physicality with practicing martial arts, so we have divised activies to help support
+          muscle growth in necessary area to make use strike are strong and accurate.
+          But what makes High Caliber Kids' Martial Arts program unique is that we go beyond the physical skills as we
+          incorporate Verbal Martial Arts into our curriculum.
+          This will help to toughen your child mental 'skin' because of the zombie bullying that happens because they
+          will just not leave them alone! These methods allow your child to communicate clearly, verbally or physically.
+          But let's be honest, zombies have not been know to take verbal communication seriously.
+        </div>
+        <div id="adultProgram" style="text-align: left; display: none;">
+          The High Caliber Adult Martial Arts Program's primary goal is to help you survive and repopulate the world.
+          Our goal is to help you develop a healthy life, as much as possible, and teach you how to protect yourself and
+          your progeny. As a member you'll be introduced to progressive categories of training. These categories include
+          empty hand training; including striking, stand-up grappling, and ground fighting; as well as weapon training.
+          We stress the getting close to zombies when you are fighting means the other avenues to engage or escape did
+          not work, as getting closing to zombies increases the risk of you getting a bite taken out of you and turning
+          you in to a zombie. As you find success in this training, your confidence will grow, hopefully.
+        </div>
+
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input class="form-check-input" type="radio" name="Radios" id="adultRadio" value="option2"
+          onchange="javascipt:toggle();" />
+        <label class="form-check-label" for="adultRadio" style="padding-left: 5px">Adult classes</label>
+      </td>
+    </tr>
+  </table>
+
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header bg-secondary mb-3">
+          <h4 class="modal-title ">Login</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <form id="loginForm">
+            <div class="form-group">
+              <label for="inputEmail">Email address</label>
+              <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp"
+                placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group" style="padding-bottom: 10px;">
+              <label for="inputPassword">Password</label>
+              <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+            </div>
+            <button type="submit" id="loginSubmit" name="loginSubmit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" lang="javascript">
+    function toggle() {
+      var childDisplay = document.getElementById("childProgram").style.display;
+      var adultDisplay = document.getElementById("adultProgram").style.display;
+
+      if (childDisplay === "flex") {
+        document.getElementById("childProgram").style.display = 'none';
+      } else {
+        document.getElementById("childProgram").style.display = 'flex';
+      }
+
+      if (adultDisplay === "flex") {
+        document.getElementById("adultProgram").style.display = 'none';
+      } else {
+        document.getElementById("adultProgram").style.display = 'flex';
+      }
+    }
+
+    function handleSubmit(event) {
+      const data = new FormData(event.target);
+      const value = Object.fromEntries(data.entries());
+      console.log(value);
+    }
+    const form = document.getElementById('loginForm');
+    form.addEventListener('submit', handleSubmit);
+  </script>
+</body>
+
+</html>
