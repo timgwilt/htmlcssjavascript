@@ -1,5 +1,3 @@
-# htmlcssjavascript
-
 # The theme is a martial arts school designed to teach people to protect themselve in the zombie apocalypse.
 # Deliverable:
 
