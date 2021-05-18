@@ -7,9 +7,10 @@
 ## Include a README file. The file should include technical specifications and a description of your website.
 ## Host on GitHub,  include the link to your GitHub account in the README file(optional)
 ## Submit the project with the GitHub repo of the project.
+
 ## Technical requirements:
 
-# HTML
+### HTML
 
 * Have at least 3 pages, keep the grid system consistent as much as possible
 * Use at least 10 different HTML tags
@@ -20,7 +21,7 @@
 * Use different types of content in the form of text, images, videos, and GIFs
 * Use regex validation
 
-# CSS
+### CSS
 
 * Inline, internal, and external styling
 * Use five different CSS selectors
@@ -30,7 +31,7 @@
 * Use SASS/SCSS (Optional)
 * Use animations (Optional)
 
-# Javascript
+### Javascript
 
 * External scripts
 * Use variables, if statements, loops, at least one form of collections, functions/call back, and events
